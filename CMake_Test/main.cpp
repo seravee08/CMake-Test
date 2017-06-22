@@ -8,6 +8,7 @@ int main() {
 	
 	cu_control(3, 5000);
 	
+	cout << "Just wanna try out branch" << endl;
 	system("pause");
 
 	return 0;
