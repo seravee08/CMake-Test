@@ -128,6 +128,7 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="main.h" />
     <ClInclude Include="simple_kernel.cuh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

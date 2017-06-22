@@ -7,6 +7,7 @@
 #include <math.h>
 
 #include "simple_kernel.cuh"
+#include "main.h"
 
 __global__ void add_kernel(int* to_be_added, int to_add, int boundary) 
 {
@@ -20,6 +21,10 @@ __global__ void add_kernel(int* to_be_added, int to_add, int boundary)
 
 void cu_control(int to_add, int boundary)
 {
+	cmake_t t1;
+	t1.mem_a = 1;
+	t1.mem_b = 2;
+
 	int* to_be_added = new int[boundary];
 	memset(to_be_added, 0, boundary * sizeof(int));
 
